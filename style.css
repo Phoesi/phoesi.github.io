@@ -1,0 +1,430 @@
+/*--------------------------------------------------
+					         CSS Site CV
+				          Sophie Hernot
+						           ---
+           Last Update : 05 / 11 / 2020
+--------------------------------------------------*/
+
+
+				    /*--- Presentation ---*/
+
+
+#Presentation
+{
+  background-color: #0B868F;
+}
+
+#Presentation h1
+{
+	padding-top : 30px;
+  font-size: xx-large;
+  vertical-align: middle;
+	color: white;
+}
+
+#Presentation h2
+{
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 30px;
+  padding-top: 20px;
+  font-size: x-large;
+  color: white;
+  text-align: justify;
+}
+
+#Presentation table
+{
+  table-layout: auto; 
+  width: 50%;
+}
+
+
+              /*--- Infos ---*/
+
+
+.Infos
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.Info
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Info img
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+#Competences .Infos
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-around;
+  flex-wrap: wrap;
+}
+
+#Competences .Info
+{
+  width: 15%;
+}
+
+#Presentation .Info p, #Presentation .Info a, #Formations a, #Mail a, #Credits a, #Credits , #Copyright
+{
+  text-align: center;
+  color: white;
+}
+
+#Presentation .Info p, #Presentation .Info a
+{
+  font-size: large;
+}
+
+
+              /*--- Profil ---*/
+
+
+#Pdp
+{
+  display: block;
+  float: right;
+  align-items: center;
+  border-radius: 30%;
+  width: 80%;
+  border: 3px solid white;
+}
+
+
+              /*--- Navigation Bar ---*/
+
+
+#Navigation 
+{
+  z-index:1000;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  table-layout: auto; 
+  background-color: #05A684;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+#Navigation li 
+{
+  float: left;
+  border-right: 3px solid white;
+}
+
+#Navigation .lastchild
+{
+  border-right: none;
+}
+
+#Navigation a
+{
+  display: block;
+  font-size: medium;
+  color: white;
+  float: left;
+  text-align: center;
+  padding: 14px 83px;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+#Navigation a:hover 
+{
+  background-color: #0B868F;
+}
+
+
+              /*--- Main Content ---*/
+
+
+#Body
+{
+  background-color: white;
+  overflow-y: scroll;
+  -ms-overflow-style:none;
+  scrollbar-width:none;
+}
+
+#Body::-webkit-scrollbar
+{
+  display: none;
+}
+
+#Body table
+{
+  table-layout: fixed; 
+  width: 100%;
+}
+
+td
+{
+  justify-content: center;
+  padding-right: 20px;
+  padding-left: 20px;
+  vertical-align: middle;
+  text-align: center;
+  color: #2E9C6F;
+  font-size: medium;
+}
+
+.Description
+{
+  margin-left: 170px;
+  margin-right: 170px;
+}
+
+.Description h2
+{
+  padding : 5px;
+  border: 3px #0B868F outset;
+  color: #0B868F;
+  vertical-align: middle;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+              /*--- Text ---*/
+
+
+section p
+{
+  color: black;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+em
+{
+  font-size: xx-large;
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+              /*--- Footer ---*/
+
+
+#Footer
+{
+	background-color: #0B868F;
+	padding: 3px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+#Mail
+{
+  font-size: x-large;
+}
+
+#Credits , #Copyright
+{
+  font-size: x-small;
+}
+
+
+			       /*--- Polaroïds ---*/
+
+
+.polaroids
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-around;
+  flex-wrap: wrap;
+}
+
+.polaroid
+{
+  margin: 10px;
+  width: 30%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.polaroid img
+{
+	width:100%;
+	padding-right: 0px;
+	padding-bottom: 0px;
+}
+
+.legende 
+{
+  text-align: center;
+  padding: 5px;
+}
+
+.container
+{
+  position: relative;
+  width: 100%;
+}
+
+.overlay 
+{
+  position: absolute;
+  opacity: 80%;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #0B868F;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay 
+{
+  bottom: 0;
+  height: 100%;
+}
+
+.text 
+{
+  word-wrap: break-word;
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: -20%;
+  text-align: center;
+  vertical-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+              /*--- Responsive ---*/
+
+
+@media screen and (max-width: 1225px) 
+{
+
+  #Presentation h1
+  {
+    padding-top: 30px;
+    font-size: 100px;
+  }
+
+  #Presentation h2
+  {
+    padding-top: 30px;
+    font-size: 50px;
+  }
+
+  .Description
+  {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .Description h2
+  {
+    border: 5px #0B868F outset;
+    font-size: 100px;
+  }
+
+  .Description p
+  {
+    font-size: 40px;
+  }
+
+  .polaroids
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-around;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .polaroid
+  {
+    margin: 3px;
+    width: 100%;
+  }
+
+  #Navigation a
+  {
+    padding: 10px 10px;
+    font-size: 40px;
+  }
+
+  .text
+  {
+    font-size: 40px;
+  }
+
+  #Competences .Info, #Loisirs .Info, #Presentation .Info
+  {
+    width: 30%;
+  }
+
+  #Competences .Info img, #Loisirs .Info img
+  {
+    width: 50%;
+  }
+
+  #Presentation .Info img
+  {
+    width: 150px;
+  }
+
+  #Presentation .Info p, #Presentation .Info a
+  {
+    font-size: 40px;
+  }
+
+  #Presentation .Infos
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #Loisirs .Infos
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-around;
+    flex-wrap: wrap;
+  }
+
+  #Pdp
+  {
+    display: block;
+    float: right;
+    align-items: center;
+    border-radius: 30%;
+    width: 100%;
+    border: 3px solid white;
+  }
+
+  em
+  {
+    font-size: 50px;
+  }
+
+}
