@@ -1,20 +1,20 @@
 /*--------------------------------------------------
-					         CSS Site CV
-				          Sophie Hernot
-						           ---
-           Last Update : 05 / 11 / 2020
+					      CSS phoesi.github.io
+				            Sophie Hernot
+						            ----
+            Last Update : 05 / 11 / 2020
 --------------------------------------------------*/
 
 
-				    /*--- Presentation ---*/
+				    /*--- Présentation ---*/
 
 
-#Presentation
+#Presentation            /* En-tête */
 {
   background-color: #0B868F;
 }
 
-#Presentation h1
+#Presentation h1            /* Nom */
 {
 	padding-top : 30px;
   font-size: xx-large;
@@ -22,7 +22,7 @@
 	color: white;
 }
 
-#Presentation h2
+#Presentation h2            /* Texte Présentation */
 {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
@@ -33,17 +33,11 @@
   text-align: justify;
 }
 
-#Presentation table
-{
-  table-layout: auto; 
-  width: 50%;
-}
-
 
               /*--- Infos ---*/
 
 
-.Infos
+.Infos            /* Conteneur */
 {
   display: flex;
   flex-direction: row;
@@ -51,14 +45,14 @@
   align-items: flex-start;
 }
 
-.Info
+.Info            /* Contenus */
 {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Info img
+.Info img            /* Images Contenu */
 {
   display: block;
   margin-left: auto;
@@ -66,7 +60,7 @@
   align-items: center;
 }
 
-#Competences .Infos
+#Competences .Infos            /* Conteneur (Compétences) */
 {
   display: flex;
   flex-direction: row;
@@ -74,18 +68,18 @@
   flex-wrap: wrap;
 }
 
-#Competences .Info
+#Competences .Info            /* Contenus (Compétences) */
 {
   width: 15%;
 }
-
+                                /* Mise en place textes (Overlay, Header et Footer) */
 #Presentation .Info p, #Presentation .Info a, #Formations a, #Mail a, #Credits a, #Credits , #Copyright
 {
   text-align: center;
   color: white;
 }
 
-#Presentation .Info p, #Presentation .Info a
+#Presentation .Info p, #Presentation .Info a            /* Taille Texte Informations Header */
 {
   font-size: large;
 }
@@ -94,7 +88,7 @@
               /*--- Profil ---*/
 
 
-#Pdp
+#Pdp            /* Photo Profil */
 {
   display: block;
   float: right;
@@ -108,7 +102,7 @@
               /*--- Navigation Bar ---*/
 
 
-#Navigation 
+#Navigation             /* Conteneur Navigation Bar */
 {
   z-index:1000;
   list-style-type: none;
@@ -122,18 +116,18 @@
   top: 0;
 }
 
-#Navigation li 
+#Navigation li             /* Liste Navigation Bar */
 {
   float: left;
   border-right: 3px solid white;
 }
 
-#Navigation .lastchild
+#Navigation .lastchild             /* Dernier élément de la liste */
 {
   border-right: none;
 }
 
-#Navigation a
+#Navigation a             /* Texte à lien du navigateur */
 {
   display: block;
   font-size: medium;
@@ -145,7 +139,7 @@
   vertical-align: middle;
 }
 
-#Navigation a:hover 
+#Navigation a:hover              /* Lors du survol des textes à lien du navigateur */
 {
   background-color: #0B868F;
 }
@@ -154,7 +148,7 @@
               /*--- Main Content ---*/
 
 
-#Body
+#Body             /* Faire disparaitre la ScrollBar de la page, mais pas ses fonctionnalités */
 {
   background-color: white;
   overflow-y: scroll;
@@ -162,18 +156,18 @@
   scrollbar-width:none;
 }
 
-#Body::-webkit-scrollbar
+#Body::-webkit-scrollbar             /* Faire disparaitre la ScrollBar de la page, mais pas ses fonctionnalités */
 {
   display: none;
 }
 
-#Body table
+#Body table             /* Tableaux de la page */
 {
   table-layout: fixed; 
   width: 100%;
 }
 
-td
+td             /* Mise en page texte  */
 {
   justify-content: center;
   padding-right: 20px;
@@ -184,13 +178,13 @@ td
   font-size: medium;
 }
 
-.Description
+.Description                /* Marges pour le contenu principal */
 {
   margin-left: 170px;
   margin-right: 170px;
 }
 
-.Description h2
+.Description h2                   /* Titres de sections */
 {
   padding : 5px;
   border: 3px #0B868F outset;
@@ -204,7 +198,7 @@ td
               /*--- Text ---*/
 
 
-section p
+section p                   /* Textes du contenu principal (mais pas des overlay) */
 {
   color: black;
   font-size: large;
@@ -212,7 +206,7 @@ section p
   text-align: center;
 }
 
-em
+em                   /* Textes importants des overlay */
 {
   font-size: xx-large;
   font-weight: bold;
@@ -223,7 +217,7 @@ em
               /*--- Footer ---*/
 
 
-#Footer
+#Footer             /* Mise en page du Footer */
 {
 	background-color: #0B868F;
 	padding: 3px;
@@ -231,12 +225,12 @@ em
 	text-align: center;
 }
 
-#Mail
+#Mail             /* Taille de police Mail footer */
 {
   font-size: x-large;
 }
 
-#Credits , #Copyright
+#Credits , #Copyright             /* Taille de police Crédits et Copyrights */
 {
   font-size: x-small;
 }
@@ -245,7 +239,7 @@ em
 			       /*--- Polaroïds ---*/
 
 
-.polaroids
+.polaroids                   /* Conteneur des polaroïds */
 {
   display: flex;
   flex-direction: row;
@@ -253,7 +247,7 @@ em
   flex-wrap: wrap;
 }
 
-.polaroid
+.polaroid                   /* Polaroïds */
 {
   margin: 10px;
   width: 30%;
@@ -261,26 +255,26 @@ em
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.polaroid img
+.polaroid img                   /* Images des polaroïds */
 {
 	width:100%;
 	padding-right: 0px;
 	padding-bottom: 0px;
 }
 
-.legende 
+.legende                    /* Annotations au bas des polaroïds */
 {
   text-align: center;
   padding: 5px;
 }
 
-.container
+.container                    /* Conteneur pour overlay */
 {
   position: relative;
   width: 100%;
 }
 
-.overlay 
+.overlay                     /* Overlay des polaroïds */
 {
   position: absolute;
   opacity: 80%;
@@ -294,13 +288,13 @@ em
   transition: .5s ease;
 }
 
-.container:hover .overlay 
+.container:hover .overlay                     /* Survol des photos pour overlay */
 {
   bottom: 0;
   height: 100%;
 }
 
-.text 
+.text                               /* Textes des overlay */
 {
   word-wrap: break-word;
   overflow: hidden;
@@ -320,99 +314,10 @@ em
               /*--- Responsive ---*/
 
 
-@media screen and (max-width: 1225px) 
+@media screen and (max-width: 1225px)                   /* Quand écran petit */
 {
 
-  #Presentation h1
-  {
-    padding-top: 30px;
-    font-size: 100px;
-  }
-
-  #Presentation h2
-  {
-    padding-top: 30px;
-    font-size: 35px;
-  }
-
-  .Description
-  {
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-
-  .Description h2
-  {
-    border: 5px #0B868F outset;
-    font-size: 100px;
-  }
-
-  .Description p
-  {
-    font-size: 40px;
-  }
-
-  .polaroids
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-around;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .polaroid
-  {
-    margin: 3px;
-    width: 100%;
-  }
-
-  #Navigation a
-  {
-    padding: 10px 10px;
-    font-size: 40px;
-  }
-
-  .text
-  {
-    font-size: 40px;
-  }
-
-  #Competences .Info, #Loisirs .Info, #Presentation .Info
-  {
-    width: 30%;
-  }
-
-  #Competences .Info img, #Loisirs .Info img
-  {
-    width: 50%;
-  }
-
-  #Presentation .Info img
-  {
-    width: 150px;
-  }
-
-  #Presentation .Info p, #Presentation .Info a
-  {
-    font-size: 40px;
-  }
-
-  #Presentation .Infos
-  {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  #Loisirs .Infos
-  {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-around;
-    flex-wrap: wrap;
-  }
-
-  #Pdp
+  #Pdp                  /* Photo de profil */
   {
     display: block;
     float: right;
@@ -422,7 +327,97 @@ em
     border: 3px solid white;
   }
 
-  em
+  #Presentation h1                  /* Nom */
+  {
+    padding-top: 30px;
+    font-size: 100px;
+  }
+
+  #Presentation h2                  /* Texte Présentation */
+  {
+    padding-top: 30px;
+    font-size: 35px;
+  }
+
+  #Presentation .Info img                  /* Icônes informations autres et contacts */
+  {
+    width: 150px;
+  }
+
+  #Presentation .Info p, #Presentation .Info a                  /* Textes informations autres et contacts */
+  {
+    font-size: 40px;
+  }
+
+  #Presentation .Infos                  /* Conteneur informations autres et contacts */
+  {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #Navigation a                  /* Texte Navigation Bar */
+  {
+    padding: 10px 10px;
+    font-size: 40px;
+  }
+
+  .Description                  /* Enlève les marges du contenu principal */
+  {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .Description h2                  /* Titres des sections agrandis */
+  {
+    border: 5px #0B868F outset;
+    font-size: 100px;
+  }
+
+  .Description p                  /* Textes agrandis */
+  {
+    font-size: 40px;
+  }
+
+  .polaroids                  /* Mise en page polaroïds */
+  {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-around;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .polaroid                  /* Taille des polaroïds */
+  {
+    margin: 3px;
+    width: 100%;
+  }
+
+  .text                    /* Taille du texte des overlay */
+  {
+    font-size: 40px;
+  }
+                                /* Redimensionner les emplacements d'informations des sections compétences, loisirs et présentation */
+  #Competences .Info, #Loisirs .Info, #Presentation .Info
+  {
+    width: 30%;
+  }
+
+  #Competences .Info img, #Loisirs .Info img                    /* Redimensionner les icônes des sections compétences et loisrs */
+  {
+    width: 50%;
+  }
+
+  #Loisirs .Infos                  /* Disposition des loisirs */
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-around;
+    flex-wrap: wrap;
+  }
+
+  em                  /* Textes Importants Polaroïds  */
   {
     font-size: 50px;
   }
